@@ -24,10 +24,39 @@
         <section>
             <h3>TypeScript 相关简介</h3>
             <ul>
-                <li>TypeScript 是微软在 2012 年推出的，是 JavaScript 的超集</li>
+                <li>TypeScript 是微软在 2012 年开发的一款开源的编程语言</li>
+                <li>TypeScript是Javascript的超集，遵循最新的ES6,ES5规范。TS扩展了JS的语法</li>
+                <li>TS更像后端JAVA,C#这样的面向对象语言，可以让JS开发大型企业项目</li>
+                <li>应用：谷歌angular2.x+基于TS语法，最新的VUE,REACT也可以集成TS，NODE框架Nestjs,midway中用的就是TS语法。</li>
+            </ul>
+        </section>
+        <section>
+            <h3>TypeScript的安装和编译</h3>
+            <ul>
+                <li>安装：
+                    <pre>
+                        npm i -g typescript
+                        或者
+                        cnpm i -g typescript
+                        或者
+                        yarn global add typescript
+                    </pre>
+                </li>
+                <li>cmd 打开命令行界面，输入tsc -v 查看安装的typescript版本，来验证是否安装成功</li>
+                <li>项目中新建index.ts文件，终端中切换到相关目录，输入tsc index.ts后，进行编译，输出一个对应的index.js文件</li>
+            </ul>
+        </section>
+        <section>
+            <h3>vscode中配置ts自动编译js文件</h3>
+            <ul>
+                <li>创建tsconfig.json文件，通过tsc --init 生成配置文件</li>
+                <li>打开配置文件，将outDir取消注释，值改为./js</li>
+                <li>在vscode终端中，找到运行任务，点击tsc:监视-tsconfig.json</li>
             </ul>
         </section>
     </main>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
