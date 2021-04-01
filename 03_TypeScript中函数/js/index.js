@@ -1,4 +1,13 @@
 "use strict";
+// ES5 中函数的定义
+// 函数声明法
+function runES5() {
+    console.log('running');
+}
+// 匿名函数
+var fun2ES5 = function () {
+    return 1314;
+};
 // TypeScript 中函数的定义
 // 函数声明法
 function run() {
